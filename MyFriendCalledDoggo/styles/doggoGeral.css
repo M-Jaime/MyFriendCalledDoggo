@@ -1,0 +1,287 @@
+/*1. ESTILO GERAL*/
+@font-face {
+    font-family: 'Fira';
+    src: url(../fonts/Fira.ttf);
+}
+
+*{
+    box-sizing: border-box;
+    font-family: 'Fira';    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*2. VARIÁVEIS*/
+:root{
+    
+    --cor001: #13e482;
+    --cor002: #25af63;
+    --cor003: #0a4d6b;
+    --cor004: #0ea7a7;
+}
+
+/* 3. CORPO*/
+body{
+    background: linear-gradient(45deg, #0a1e49, #05294e, #153269, #1b1846, #2a3f9b, #030850) no-repeat fixed;
+    animation: body 10s  linear infinite;
+    background-size: 300% 300%;
+    width: 100%;
+    height: 100vh;
+}
+
+/*4. BARRA DE NAVEGAÇÃO*/
+
+nav{
+    height: 100px;
+    width: 100%;
+    background: #fff;
+    border-bottom: 3px solid #00000056;
+    position: sticky;
+    top: 0;
+}
+
+nav .logo{
+    font-size: 40px;
+    line-height: 100px;
+    padding-left: 25px;
+    margin-left: 50px;
+}
+.logo strong{
+    color: #d60f6c;
+    font-family: 'Fira';
+}
+
+.logo a{
+    text-decoration: none;
+    line-height: 50px;
+    font-family: 'Fira';
+    color: #09235b;
+}
+nav ul{
+    float: right;
+    margin-right: 60px;
+    display: block;
+    margin-top: -50px;
+}
+nav ul li{
+    display: inline-block;
+}
+
+nav ul li a{
+    font-family: 'Fira';
+    font-size: 22px;
+    font-weight: 600;
+    color: #0a4d6b;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: all .2s;
+    padding: 5px;
+    border-radius: 5px;
+}
+nav ul li a:hover{
+    color: #d60f6c;
+    
+}
+
+
+
+label.botao{
+    font-size: 30px;
+    float: right;
+    line-height: 100px;
+    margin-right: 15px;
+    transition: all .7s;
+    display: none; 
+}
+
+label.botao b{
+    padding: 7px;
+    border-radius: 10px;
+    height: 10px;
+    width: 100px;
+}
+
+label.botao b:hover{ 
+    background: #f1f1f1c7;
+
+}
+
+#check{
+  display: none; 
+
+}
+
+/*MAIN*/
+main.header{ 
+    width: 100%;
+    position: relative;
+    z-index: -1 ;
+    display: flex;
+    height: 650px;
+    justify-content: center;
+    align-items: center;
+    background: #e9e4e4;
+    padding-top: 10px;
+    background-size: 300% 300%;
+}
+.headline{
+    flex: 40%;
+    margin-left: 10%;
+}
+.headline h2#letter-space{ 
+    font-weight: 900;
+    font-size: 20px;
+    color: #180f4aa9;
+    padding: 0;
+    margin: 0;
+    letter-spacing: 8px;
+    font-family: 'Fira';
+    
+}
+.headline h2#doggoBig{ 
+    font-weight: 900;
+    font-size: 80px;
+    color: #180f4a;
+    margin: 10px;
+    font-family: 'Fira';
+}
+
+.headline p#descri{
+    color: gray;
+    text-align: left;
+    font-family: 'Fira';
+}
+
+.img-headline{
+    flex: 40%;
+    height: 400px;
+    width: 450px;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-left: 50px;
+}
+
+.img-headline img{
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+    transition: all .5s ease;
+    
+}
+img:hover{
+    transform: scale(3);
+}
+
+/*SECTION SOBRE O DOGGO*/
+section.Doggo{
+    display: inline-block;
+    text-align: center;
+    padding: 5%;  
+    background: #02060cc0;
+    width: 100%;
+}
+section h2.about-title{
+    width: 100%;
+    font-size: 30px;
+    margin: 30px 0;
+    font-family: 'Fira';
+    color: #eeeeee;
+    text-shadow: 1px 1px 4px #fff;
+    animation: sectionDoggo  1.5s ease infinite;
+}
+.aboutCards{
+        display: flex;
+        justify-content: center;
+        margin-top: 25px;
+        gap: 20px;
+        flex-wrap: wrap;       
+}
+.card{
+   flex-basis: 300px;
+   height: 210px;
+   border-radius: 5px;
+   padding: 15px 20px;
+   margin-bottom: 10px ;
+   border-radius: 5%;
+   color: aliceblue;
+   background: #031c3abc;
+   transition: all .5s;
+   box-shadow:  2px 2px 3px #e2e799;
+   animation: shadowCards 1.8s  linear infinite;
+   
+}
+
+.card:hover{
+    background: #ffffffd8;
+    box-shadow:  none;
+    border: none;   
+    color: #0a1e49;
+    animation: none;
+}
+.card-text h3{
+    font-size: 20px;
+    font-family: 'Fira';
+    color: #eeeeee;
+    text-shadow: 1px 1px 3px #e2e799;
+    margin-bottom: 25px;
+}
+.card-text p{
+    color: #fff;
+    font-family: 'Fira';
+    font-size: 16px;
+    
+}
+.card:hover h3{    
+    text-shadow: none;
+    color: #d60f6c;
+}
+.card:hover p{    
+    color: #000000;   
+    font-weight: bolder;
+}
+
+
+/*. . . RODAPÉ */
+footer{
+    position: relative;
+    background: #000000d3;
+    margin-top: 0;
+    color: #fff;
+    height: 250px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;   
+    border-top: 2px solid #e2e799;
+    
+}
+.Me{
+    margin-left: 50px;
+    margin-top: 50px;
+    text-align: center;
+    font-family: 'Fira';
+}
+.Me #MyData{
+    color: #d60f6c;
+    font-size: 20px;
+    font-family: 'Fira';
+}
+.contactos{
+    margin-top: 50px;
+    margin-right: 50px;
+}
+.contactos h3{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+.social{
+    margin-bottom: 20px;
+}
+.social p{
+    margin-bottom: 6px;
+    font-size: 16px;
+}
+footer a{
+    color: #13e482;
+}

@@ -1,0 +1,119 @@
+/* ESTILO GERAL*/
+@font-face {
+    font-family: 'Fira';
+    src: url(../fonts/Fira.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira';
+}
+
+/* ESTILO DO CORPO*/
+body{
+    background: linear-gradient(45deg, #0a1e49, #05294e, #153269, #1b1846, #2a3f9b, #030850) no-repeat fixed;
+    animation: body 10s  linear infinite;
+    background-size: 300% 300%;
+    width: 100%;
+    height: 100vh;
+}
+/*CONTAINER*/
+
+.container{
+    background: #e0e0f3;
+    border: 2px solid #e8eaf7;
+    border-top: none;
+    border-left: none;
+    overflow: hidden;
+    width: 90%;
+    margin: 20px auto;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+section.about{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    
+}
+section.about .about-image{
+    width: 400px;
+    margin: -20px 40px -25px -30px;
+    overflow: hidden;
+    display: block;
+}
+.about-image img{
+    max-width: 100%;
+    height: auto;
+    transition: .5s ease-in-out;
+}
+.about-image img:hover{
+    transform: scale(1.1);
+    
+}
+
+.about-content{
+    flex: 1;
+}
+.about-content h2{
+    font-size: 25px;
+    color: #333;
+    margin-bottom: 10px;
+}
+.about-content h2 b{
+    font-size: 25px;
+    color: #e60d72;
+    margin-bottom: 10px;
+}
+.about-content p{
+    color: #665;
+    line-height: 1.4;
+    margin-bottom: 15px;
+}
+.about-content a.read-more{
+    padding: 10px 20px;
+    display: inline-block;
+    color: #fff;
+    background-color: #155baa;
+    text-decoration: none;
+    transition: .3s ease;
+    border-radius: 10px;
+    text-align: center;
+
+}
+.about-content a.read-more:hover{
+    background: #dd005c;
+
+}
+
+@media (max-width: 768px) {
+    .heading{
+        padding: 0px 20px ;
+    }
+    .heading h1{
+        font-size: 35px;
+    }
+    .heading{
+        font-size: 17px;
+        margin-bottom: 10px;
+
+    }
+    .container{
+        padding: 0px;
+    }
+    .about{
+        padding: 20px;
+        flex-direction: column;
+    }
+    .about-image{
+        margin: 0 0 20px 0 ;
+    }
+    .about-content p, .about-content p{
+        padding: 0px;
+        font-size: 16px;
+    }
+}
+
